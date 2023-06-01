@@ -1,0 +1,149 @@
+.formacao{
+  color: white;
+}
+
+.formacao-container{
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap:100px;
+  background-color:#223A53 ;
+  border-radius: 132px 122px 0px;
+  align-items: center;
+ 
+}
+
+.formacao .subtitulo{
+  color: #38526C; 
+  max-width: 5ch;
+}
+
+.formacao-texto{
+  font-size: 1.30rem;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  max-width: 40ch !important;
+  color: #6488A2 ;
+}
+
+.formacao-texto strong{
+  color: #ffffff;
+}
+
+.faculdade-lista{
+  margin-bottom: 60px;
+  display: flex;
+  padding: 20px;
+  justify-content: left;
+}
+
+.faculdade{
+  /* flex: 1; */
+  background:#6488A2;
+  border-radius: 4px;
+  padding: 20px 40px;
+  line-height: 1.5rem;
+  display: flex;
+  border-radius: 20px 50px;
+  flex-direction: column;
+}
+
+.faculdade-tipo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color:#38526C;
+  margin-bottom: 10px;
+}
+
+.faculdade-curso{
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  position: relative;
+  flex: 1;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(180deg, #FCEFDF 20.83%, #6488A2 100%);
+  border-radius: 100%;
+  position: absolute;
+  top: -40px;
+  left: -35px;
+
+}
+
+.faculdade-instituicao{
+  font-size: 1.125rem;
+  color:#38526C;
+  font-family: Arial ;
+}
+
+.cursos{
+  margin-bottom: 30px;
+}
+
+.formacao-extra h3{
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color:#ffffff ;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.formacao-extra h3::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(180deg, #FCEFDF 20.83%, #6488A2 100%);
+  border-radius: 100%;
+  position: absolute;
+  top: -5px;
+  left: -40px;
+}
+
+.formacao-extra li{
+  font-size: 1.125rem;
+  line-height: 1.125;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span{
+  color: #FCEFDF;
+}
+
+.cursos li{
+  display: flex;
+  justify-content: space-between;
+   
+}
+
+
+
+@media (max-width: 800px){
+  .formacao-container{
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 50px;
+  }
+
+  .formacao .subtitulo{
+    color: #ffffff;
+  }
+
+  .formacao-texto{
+    font-size: 1.20rem;
+  }
+
+  .formacao-extra h3::before{
+    position: initial ;
+    margin-bottom: 10px;
+  }
+}
